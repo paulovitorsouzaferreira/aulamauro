@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebe dados</title>
+</head>
+<body>
+    <form action="salvarfutebol.php" method="GET">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br>
+        <label for="pontos">Pontos:</label>
+        <input type="number" name="pontos" required><br>
+        <input type="submit" value="Salvar">
+    </form>
+    
+    <h2>Times Salvos</h2>
+    <table border="1">
+        
+        <tr>
+            <td colspan="3">
+                <a href="mostrarfutebol.php">Ver Todos os Times</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
