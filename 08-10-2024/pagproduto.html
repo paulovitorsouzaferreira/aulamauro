@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receber Dados do Produto</title>
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form action="salvarproduto.php" method="GET">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br>
+        <label for="url_foto">URL da Foto:</label>
+        <input type="text" name="url_foto" required><br>
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" required></textarea><br>
+        <label for="preco">Preço:</label>
+        <input type="text" name="preco" required><br>
+        <input type="submit" value="Salvar Produto">
+    </form>
+
+    <h2>Produtos Salvos</h2>
+    <table border="1">
+        
+        <tr>
+            <td colspan="3">
+                <a href="mostraproduto.php">Ver Todos os Produtos</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
